@@ -8,6 +8,13 @@ using KeilauksenPistelaskuri;
 
 namespace KeilauksenPistelaskuri
 {
+
+    public class Frame
+    {
+
+    }
+
+  
     
     public class TestienAlustus
     {

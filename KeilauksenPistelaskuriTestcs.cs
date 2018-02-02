@@ -9,6 +9,8 @@ using NUnit.Framework;
 
 namespace KeilauksenPistelaskuri
 {
+
+
     [TestFixture]
 
     public class PisteLaskuriTest
@@ -16,11 +18,33 @@ namespace KeilauksenPistelaskuri
         PisteLaskuri laskuri;
 
         [SetUp]
-        
+
         public void TestienAlustus()
         {
             laskuri = new PisteLaskuri();
+        }
+
+        //Tässä on laskurin  10 ruutua.
+        public class KeilausLaskuri
+        {
+
+            private readonly Frame[] _frames = new Frame[10];
+            private int _CurrentFrame;
+            private Frame LastFrame { get { return _frames[_CurrentFrame - 1]; } }
+            private Frame TwoFramesAgo { get { return _frames[_CurrentFrame - 2]; } }
+
+            public int Score { get; private set; }
+
+
+
+            public void BowlFrame(Frame frame)
+            {
+
+            }
 
         }
+
     }
 }
+    
+
