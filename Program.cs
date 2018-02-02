@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace KeilauksenPistelaskuri
 {
-    class Program
+    
+    public class PisteLaskuri
     {
         static void Main(string[] args)
         {
