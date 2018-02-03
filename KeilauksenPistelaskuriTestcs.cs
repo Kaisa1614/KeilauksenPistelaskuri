@@ -29,9 +29,11 @@ namespace KeilauksenPistelaskuri
         {
 
             private readonly Frame[] _frames = new Frame[10];
-            private int _CurrentFrame;
-            private Frame LastFrame { get { return _frames[_CurrentFrame - 1]; } }
-            private Frame TwoFramesAgo { get { return _frames[_CurrentFrame - 2]; } }
+            private int _currentFrame;
+
+
+            private Frame LastFrame { get { return _frames[_currentFrame - 1]; } }
+            private Frame TwoFramesAgo { get { return _frames[_currentFrame - 2]; } }
 
             public int Score { get; private set; }
 
